@@ -22,55 +22,55 @@ console.log(parseInt('9.8') === 10);     // false
 
 // Boolean values
 // Truthy
-console.log(1);          // truthy
-console.log("Hello");    // truthy
-console.log(true);       // truthy
+console.log(1);          
+console.log("Hello");   
+console.log(true);      
 
 // Falsy
-console.log(0);          // falsy
-console.log("");         // falsy
-console.log(null);       // falsy
+console.log(0);          
+console.log("");       
+console.log(null);     
 
 // Comparison results
-console.log(4 > 3);      // true
-console.log(4 >= 3);     // true
-console.log(4 < 3);      // false
-console.log(4 <= 3);     // false
-console.log(4 == 4);     // true
-console.log(4 === 4);    // true
-console.log(4 != 4);     // false
-console.log(4 !== 4);    // false
-console.log(4 != '4');   // false
-console.log(4 == '4');   // true
-console.log(4 === '4');  // false
+console.log(4 > 3);     
+console.log(4 >= 3);     
+console.log(4 < 3);     
+console.log(4 <= 3);    
+console.log(4 == 4);    
+console.log(4 === 4);  
+console.log(4 != 4);    
+console.log(4 !== 4);    
+console.log(4 != '4');   
+console.log(4 == '4');  
+console.log(4 === '4');  
 
 // python vs jargon length
 console.log('python'.length !== 'jargon'.length); // falsy statement
 
 // Logical operators
-console.log(4 > 3 && 10 < 12);   // true
-console.log(4 > 3 && 10 > 12);   // false
-console.log(4 > 3 || 10 < 12);   // true
-console.log(4 > 3 || 10 > 12);   // true
-console.log(!(4 > 3));           // false
-console.log(!(4 < 3));           // true
-console.log(!(false));           // true
-console.log(!(4 > 3 && 10 < 12)); // false
-console.log(!(4 > 3 && 10 > 12)); // true
-console.log(!(4 === '4'));        // true
+console.log(4 > 3 && 10 < 12);  
+console.log(4 > 3 && 10 > 12); 
+console.log(4 > 3 || 10 < 12);   
+console.log(4 > 3 || 10 > 12);  
+console.log(!(4 > 3));          
+console.log(!(4 < 3));         
+console.log(!(false));           
+console.log(!(4 > 3 && 10 < 12))
+console.log(!(4 > 3 && 10 > 12)); 
+console.log(!(4 === '4'));        
 
 // dragon vs python
 console.log(!('dragon'.includes('on') && 'python'.includes('on'))); // false
 
 // Date object
 let now = new Date();
-console.log(now.getFullYear());   // year today
-console.log(now.getMonth() + 1);  // month today
-console.log(now.getDate());       // date today
-console.log(now.getDay());        // day number
-console.log(now.getHours());      // hours now
-console.log(now.getMinutes());    // minutes now
-console.log(Math.floor(now.getTime() / 1000)); // seconds since 1970
+console.log(now.getFullYear());   
+console.log(now.getMonth() + 1);  
+console.log(now.getDate());       
+console.log(now.getDay());        
+console.log(now.getHours());      
+console.log(now.getMinutes());    
+console.log(Math.floor(now.getTime() / 1000)); 
 
 
 
@@ -177,4 +177,4 @@ let minutes2 = now2.getMinutes();
 if (minutes2 < 10) minutes2 = "0" + minutes2;
 
 console.log(`${year2}-${month2}-${date2} ${hours2}:${minutes2}`);
-// Example output: 2025-09-15 09:07
+
