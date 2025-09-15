@@ -23,6 +23,7 @@ console.log(parseInt('9.8') === 10);     // false
 // Boolean values
 // Truthy
 console.log(1);          
+
 console.log("Hello");   
 console.log(true);      
 
@@ -43,13 +44,35 @@ console.log(4 !== 4);
 console.log(4 != '4');   
 console.log(4 == '4');  
 console.log(4 === '4');  
+console.log("Hello");    
+console.log(true);       
+
+// Falsy
+console.log(0);          
+console.log("");         
+console.log(null);       
+
+// Comparison results
+console.log(4 > 3);
+console.log(4 >= 3);
+console.log(4 < 3);
+console.log(4 <= 3);
+console.log(4 == 4);
+console.log(4 === 4);
+console.log(4 != 4);
+console.log(4 !== 4);
+console.log(4 != '4');
+console.log(4 == '4');
+console.log(4 === '4');
+
 
 // python vs jargon length
 console.log('python'.length !== 'jargon'.length); // falsy statement
 
 // Logical operators
+
 console.log(4 > 3 && 10 < 12);  
-console.log(4 > 3 && 10 > 12); 
+console.log(4 > 3 && 10 > 12);
 console.log(4 > 3 || 10 < 12);   
 console.log(4 > 3 || 10 > 12);  
 console.log(!(4 > 3));          
@@ -58,6 +81,17 @@ console.log(!(false));
 console.log(!(4 > 3 && 10 < 12))
 console.log(!(4 > 3 && 10 > 12)); 
 console.log(!(4 === '4'));        
+
+console.log(4 > 3 && 10 < 12);   
+console.log(4 > 3 && 10 > 12);   
+console.log(4 > 3 || 10 < 12);   
+console.log(4 > 3 || 10 > 12);   
+console.log(!(4 > 3));           
+console.log(!(4 < 3));           
+console.log(!(false));           
+console.log(!(4 > 3 && 10 < 12)); 
+console.log(!(4 > 3 && 10 > 12)); 
+console.log(!(4 === '4'));
 
 // dragon vs python
 console.log(!('dragon'.includes('on') && 'python'.includes('on'))); // false
