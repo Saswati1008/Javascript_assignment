@@ -1,4 +1,3 @@
-
 function fullName() {
   console.log("Saswati Sahoo");
 }
@@ -65,7 +64,7 @@ function weight(mass, gravity) {
 console.log(weight(10, 9.8));
 
 function convertCelsiusToFahrenheit(celsius) {
-  return (celsius * 9/5) + 32;
+  return (celsius * 9) / 5 + 32;
 }
 
 console.log(convertCelsiusToFahrenheit(30));
@@ -91,7 +90,6 @@ function checkBmiCategory(weight, height) {
 
 console.log(checkBmiCategory(50, 1.55));
 
-
 function findMax(a, b, c) {
   let max = a;
   if (b > max) max = b;
@@ -101,7 +99,6 @@ function findMax(a, b, c) {
 
 console.log(findMax(0, 10, 5));
 console.log(findMax(0, -10, -2));
-
 
 function checkSeason(month) {
   month = month.toLowerCase();
@@ -129,23 +126,21 @@ function checkSeason(month) {
 
 console.log(checkSeason("April")); // Spring
 
-
 function solveLinEquation(a, b, c, y) {
- 
-  return (-c - b*y) / a;
+  return (-c - b * y) / a;
 }
 
-console.log(solveLinEquation(2, 3, -6, 1)); 
+console.log(solveLinEquation(2, 3, -6, 1));
 
 function solveQuadratic(a, b, c) {
-  let discriminant = b*b - 4*a*c;
+  let discriminant = b * b - 4 * a * c;
   if (discriminant < 0) {
     return "No real roots";
   } else if (discriminant === 0) {
-    return -b / (2*a);
+    return -b / (2 * a);
   } else {
-    let root1 = (-b + Math.sqrt(discriminant)) / (2*a);
-    let root2 = (-b - Math.sqrt(discriminant)) / (2*a);
+    let root1 = (-b + Math.sqrt(discriminant)) / (2 * a);
+    let root2 = (-b - Math.sqrt(discriminant)) / (2 * a);
     return [root1, root2];
   }
 }
@@ -166,7 +161,7 @@ function showDateTime() {
   let year = now.getFullYear();
   let hours = now.getHours();
   let minutes = now.getMinutes();
-  
+
   console.log(day + "/" + month + "/" + year + " " + hours + ":" + minutes);
 }
 
@@ -206,14 +201,14 @@ function addItem(arr, item) {
   return arr;
 }
 
-console.log(addItem([1,2,3], 4));
+console.log(addItem([1, 2, 3], 4));
 
 function removeItem(arr, index) {
   arr.splice(index, 1);
   return arr;
 }
 
-console.log(removeItem([1,2,3,4], 2)); 
+console.log(removeItem([1, 2, 3, 4], 2));
 
 function sumOfNumbers(n) {
   let sum = 0;
@@ -224,21 +219,22 @@ function sumOfNumbers(n) {
 console.log(sumOfNumbers(5));
 function sumOfOdds(n) {
   let sum = 0;
-  for (let i = 1; i <= n; i+=2) sum += i;
+  for (let i = 1; i <= n; i += 2) sum += i;
   return sum;
 }
 
 console.log(sumOfOdds(10));
 function sumOfEven(n) {
   let sum = 0;
-  for (let i = 0; i <= n; i+=2) sum += i;
+  for (let i = 0; i <= n; i += 2) sum += i;
   return sum;
 }
 
-console.log(sumOfEven(10)); 
+console.log(sumOfEven(10));
 
 function evensAndOdds(n) {
-  let evens = 0, odds = 0;
+  let evens = 0,
+    odds = 0;
   for (let i = 0; i <= n; i++) {
     if (i % 2 === 0) evens++;
     else odds++;
@@ -257,10 +253,12 @@ function sum() {
   return total;
 }
 
-console.log(sum(1,2,3)); 
-console.log(sum(1,2,3,4)); 
+console.log(sum(1, 2, 3));
+console.log(sum(1, 2, 3, 4));
 function randomUserIp() {
-  return `${Math.floor(Math.random()*256)}.${Math.floor(Math.random()*256)}.${Math.floor(Math.random()*256)}.${Math.floor(Math.random()*256)}`;
+  return `${Math.floor(Math.random() * 256)}.${Math.floor(
+    Math.random() * 256
+  )}.${Math.floor(Math.random() * 256)}.${Math.floor(Math.random() * 256)}`;
 }
 
 console.log(randomUserIp());
@@ -269,7 +267,7 @@ function randomMacAddress() {
   let chars = "0123456789ABCDEF";
   let mac = "";
   for (let i = 0; i < 12; i++) {
-    mac += chars.charAt(Math.floor(Math.random()*16));
+    mac += chars.charAt(Math.floor(Math.random() * 16));
     if (i % 2 === 1 && i !== 11) mac += ":";
   }
   return mac;
@@ -281,7 +279,7 @@ function randomHexaNumberGenerator() {
   let chars = "0123456789abcdef";
   let hex = "#";
   for (let i = 0; i < 6; i++) {
-    hex += chars.charAt(Math.floor(Math.random()*16));
+    hex += chars.charAt(Math.floor(Math.random() * 16));
   }
   return hex;
 }
@@ -365,7 +363,7 @@ function shuffleArray(arr) {
   return newArr;
 }
 
-console.log(shuffleArray([1,2,3,4,5]));
+console.log(shuffleArray([1, 2, 3, 4, 5]));
 
 function factorial(n) {
   let result = 1;
@@ -382,7 +380,7 @@ function isEmpty(value) {
   return false;
 }
 
-console.log(isEmpty(""));  // true
+console.log(isEmpty("")); // true
 console.log(isEmpty("Hi")); // false
 
 function sum() {
@@ -393,7 +391,7 @@ function sum() {
   return total;
 }
 
-console.log(sum(1,2,3,4)); // 10
+console.log(sum(1, 2, 3, 4)); // 10
 
 function sumOfArrayItems(arr) {
   let total = 0;
@@ -406,21 +404,23 @@ function sumOfArrayItems(arr) {
   return total;
 }
 
-console.log(sumOfArrayItems([1,2,3,4]));
+console.log(sumOfArrayItems([1, 2, 3, 4]));
 
 function average(arr) {
   let total = sumOfArrayItems(arr);
   return total / arr.length;
 }
 
-console.log(average([1,2,3,4]));
+console.log(average([1, 2, 3, 4]));
 function modifyArray(arr) {
   if (arr.length < 5) return "Not Found";
   arr[4] = arr[4].toUpperCase();
   return arr;
 }
 
-console.log(modifyArray(['Avocado','Tomato','Potato','Mango','Lemon','Carrot']));
+console.log(
+  modifyArray(["Avocado", "Tomato", "Potato", "Mango", "Lemon", "Carrot"])
+);
 
 function isPrime(n) {
   if (n < 2) return false;
@@ -430,7 +430,7 @@ function isPrime(n) {
   return true;
 }
 
-console.log(isPrime(7)); 
+console.log(isPrime(7));
 function allUnique(arr) {
   for (let i = 0; i < arr.length; i++) {
     for (let j = i + 1; j < arr.length; j++) {
@@ -440,8 +440,8 @@ function allUnique(arr) {
   return true;
 }
 
-console.log(allUnique([1,2,3]));
-console.log(allUnique([1,2,2]));
+console.log(allUnique([1, 2, 3]));
+console.log(allUnique([1, 2, 2]));
 function allSameType(arr) {
   let type = typeof arr[0];
   for (let i = 1; i < arr.length; i++) {
@@ -450,19 +450,19 @@ function allSameType(arr) {
   return true;
 }
 
-console.log(allSameType([1,'2',3])); 
+console.log(allSameType([1, "2", 3]));
 function isValidVariable(name) {
   let pattern = /^[a-zA-Z_$][a-zA-Z0-9_$]*$/;
   return pattern.test(name);
 }
 
-console.log(isValidVariable("myVar")); 
+console.log(isValidVariable("myVar"));
 function sevenRandomNumbers() {
   let nums = [];
   while (nums.length < 7) {
     let n = Math.floor(Math.random() * 10);
     if (!nums.includes(n)) {
-        nums.push(n)
+      nums.push(n);
     }
   }
   return nums;
@@ -470,7 +470,7 @@ function sevenRandomNumbers() {
 
 console.log(sevenRandomNumbers());
 function reverseCountries(countries) {
-  let copy = countries.slice(); 
+  let copy = countries.slice();
   let reversed = [];
   for (let i = copy.length - 1; i >= 0; i--) {
     reversed.push(copy[i]);
@@ -478,5 +478,4 @@ function reverseCountries(countries) {
   return reversed;
 }
 
-console.log(reverseCountries(["Finland","Sweden","Norway"]));
-
+console.log(reverseCountries(["Finland", "Sweden", "Norway"]));
