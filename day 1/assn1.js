@@ -1,5 +1,3 @@
-
-
 // comments can make code readable
 
 // Welcome to 30DaysOfJavaScript
@@ -15,10 +13,10 @@ let isStudent = true;
 let hobby;
 let job = null;
 
-console.log(typeof name);      
-console.log(typeof isStudent); 
-console.log(typeof hobby);     
-console.log(typeof job); 
+console.log(typeof name);
+console.log(typeof isStudent);
+console.log(typeof hobby);
+console.log(typeof job);
 
 let a;
 let b;
@@ -36,12 +34,15 @@ let maritalStatus = "Single";
 let country = "India";
 let age = 21;
 
-let firstName1 = "Saswati", lastName1 = "Sahoo", maritalStatus1 = "Single", country1 = "India", age1 = 21;
-
+let firstName1 = "Saswati",
+  lastName1 = "Sahoo",
+  maritalStatus1 = "Single",
+  country1 = "India",
+  age1 = 21;
 
 let myAge = 22;
 let yourAge = 25;
 
 console.log("My age is:", myAge);
 console.log("Your age is:", yourAge);
- console. log(`I am ${myAge} years old and you are ${yourAge} years old`);
+console.log(`I am ${myAge} years old and you are ${yourAge} years old`);
